@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Shivakumar Ummeda</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shivakumar Ummeda</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="/assets/founder.jpg" alt="Shivakumar's profile picture" class="profile-pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Shivakumar Ummeda</h1>
+            <p class="section_text_p2">Full-Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2 btn-first" id="btn-first" onclick="window.open('./assets/')">Download CV</button>
+                <button class="btn btn-color-1 btn-first" id="btn-first" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="/assets/l-in icon.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com/in/shivakumarummeda29'">
+                <img src="/assets/github.png" alt="My GitHub profile" class="icon github-icon" onclick="location.href='https://github.com/ShivakumarU/html-css-js-myportfolio'">
+                <img src="/assets/insta icon.png" alt="My Instagram profile" class="icon" onclick="location.href='https://www.instagram.com/trendie_calligraphie/'">
+                <img src="/assets/youtube icon.png" alt="My youtube" class="icon youtube-icon" onclick="location.href='https://www.youtube.com/@trendie_calligraphie'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="/assets/profile.jpg" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="/assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br/> Full-Stack Development and Support</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="/assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.tech. Information Technology <br/> Kakatiya University Campus, Warangal</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="about-intro">
+                        A passionate software developer from India, currently working at tech.at.core with over 2+ years of work experience in development and support, I specialize in building efficient and scalable web applications. I have a strong foundation in full-stack development, working with modern technologies to create seamless user experiences. I enjoy solving complex problems, optimizing performance, and continuously learning to stay updated with industry trends. My goal is to develop innovative solutions that drive business growth while enhancing user satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+        <div class="skills-list-container">
+          <div class="skills-1">
+            <h3>Frontend Development</h3>
+            <span>• HTML</span>
+            <span>• CSS</span>
+            <span>• JavaScript</span>
+            <span>• TypeScript</span>
+            <span>• Angular</span>
+            <span>• Bootstrap</span>
+            <span>• Figma</span>
+          </div>
+          <div class="skills-2">
+            <h3>Backend Development</h3>
+            <span>• Java</span>
+            <span>• Springboot</span>
+            <span>• RESTful API</span>
+            <span>• JPA</span>
+            <span>• Microservices</span>
+            <span>• PostgreSQL</span>
+          </div>
+          <div class="skills-3">
+            <h3>Cloud Services & Deployment</h3>
+            <span>• Google Cloud Platform</span>
+            <span>• Docker</span>
+            <span>• CI/CD(Jenkins)</span>
+          </div>
+          <div class="skills-4">
+            <h3>Version Control</h3>
+            <span>• Git</span>
+            <span>• Bitbucket</span>
+            <span>• GitHub</span>
+          </div>
+          <div class="skills-5">
+            <h3>Opeating System</h3>
+            <span>• Linux</span>
+            <span>• MacOS</span>
+            <span>• Windows</span>
+          </div>
+          <div class="Skills-6">
+            <h3>Others</h3>
+            <span>• Agile Methodology</span>
+            <span>• Scrum</span>
+            <span>• Logging & Monitoring (Grafana)</span>
+          </div>
+        </div>
+        <div class="skills-icon-container">
+          <img src="/assets/sec2imgBrain.png" alt="skills image" class="skills-icon">
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project-1 two-projects">
+          <img src="/assets/project-1.webp" alt="my-first-project" class="first-project-pic projects-pic">
+          <h2>Project-1</h2>
+          <button class="btn btn-color-1">Github</button>
+          <button class="btn btn-color-2">Live Demo</button>
+        </div>
+        <div class="project-2 two-projects">
+          <img src="/assets/project-2.webp" alt="my-second-project" class="second-project-pic projects-pic">
+          <h2>Project-2</h2>
+          <button class="btn btn-color-1">Github</button>
+          <button class="btn btn-color-2">Live Demo</button>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">Get in touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info">
+        <div class="contact-info-1 contact-infos">
+          <img src="/assets/email.png" alt="email icon">
+          <p><a href="mailto:ummedashivakumar@gmail.com">ummedashivakumar@gmail.com</a></p>
+        </div>
+        <div class="contact-info-2 contact-infos">
+          <img src="/assets/linkedin.png" alt="linkedin icon">
+          <p><a href="https://www.linkedin.com/in/shivakumarummeda29" class="l-in-icon">Linkedin</a></p>
+        </div>
+        <div class="contact-info-3 contact-infos">
+          <img src="/assets/mobile.png" alt="mobile icon">
+          <p class="mobile-num">+91-9494558983</p>
+        </div>
+      </div> 
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#profile'"
+      />
+    </section>
+    <footer>
+        <div>
+          <p class="footer-text">Hey there ! I'm<strong> Shivakumar Ummeda</strong> <br>Welcome to my personal website,<br> where I showcase my skills,<br> projects, and professional journey.</p>
+        </div>
+        <div class="footer-nav-container">
+          <div class="footer-nav-links-container">
+            <ul class="footer-nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="connect-me">
+          <div><p class="connect-withme">Connect with me</p></div>
+          <div id="socials-container">
+            <img src="/assets/l-in icon.png" alt="My Linkedin Profile" class="icon " onclick="location.href='https://linkedin.com/in/shivakumarummeda29'">
+            <img src="/assets/github.png" alt="My GitHub profile" class="icon github-icon" onclick="location.href='https://github.com/ShivakumarU/html-css-js-myportfolio'">
+            <img src="/assets/insta icon.png" alt="My Instagram profile" class="icon" onclick="location.href='https://www.instagram.com/trendie_calligraphie/'">
+            <img src="/assets/youtube icon.png" alt="My youtube" class="icon youtube-icon" onclick="location.href='https://www.youtube.com/@trendie_calligraphie'">
+          </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
