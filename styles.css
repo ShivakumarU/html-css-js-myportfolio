@@ -243,25 +243,16 @@ section{
     cursor: pointer;
 }
 
-.btn-color-1{
+.btn-color-1,.btn-color-2{
     background: rgb(0,0,0);
     color: white;
 }
 
-.btn-color-1:hover{
+.btn-color-1:hover,.btn-color-2:hover{
     background: white;
     color: black;
 }
 
-.btn-color-2{
-    background: none;
-}
-
-.btn-color-2:hover{
-    border: rgb(255,255,255) 0.1rem solid;
-    background: rgb(0,0,0);
-    color: aliceblue;
-}
 
 .btn-container{
     gap: 1rem;
